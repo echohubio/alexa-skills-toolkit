@@ -1,5 +1,9 @@
 # Changelog
 
-## 0.0.1
+## 0.0.2 (2017-05-11)
+
+* Distribute executable (@johnf)
+
+## 0.0.2 (2017-05-11)
 
 * First release (@johnf)

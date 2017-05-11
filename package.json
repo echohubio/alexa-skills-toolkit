@@ -1,0 +1,52 @@
+{
+  "author": "John Ferlito <johnf@inodes.org> (http://inodes.org)",
+  "bugs": {
+    "url": "https://github.com/echohubio/alexa-skills-toolkit/issues"
+  },
+  "bin": {
+    "alexa-skills-toolkits": "dist/bin/alexa-skills-toolkit.js"
+  },
+  "dependencies": {
+    "chrome-cookies-secure-promise": "^0.0.6",
+    "commander": "^2.9.0",
+    "debug": "^2.6.1",
+    "superagent": "^3.5.2"
+  },
+  "description": "Toolset to manipulate Alexa skills",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2 || ^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "webpack": "^2.5.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "homepage": "https://github.com/echohubio/alexa-skill-tools#readme",
+  "keywords": [
+    "alexa",
+    "skill"
+  ],
+  "license": "ISC",
+  "main": "dist/index.js",
+  "name": "alexa-skill-tools",
+  "repository": {
+    "type": "git",
+    "url": "echohubio/alexa-skill-tools"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "watch": "webpack --progress --colors --watch",
+    "lint": "eslint .",
+    "prepublish": "npm run build",
+    "postversion": "git push",
+    "test": "mocha --compilers js:babel-core/register",
+    "version": "vi CHANGELOG.md && git add CHANGELOG.md"
+  },
+  "version": "0.0.1"
+}

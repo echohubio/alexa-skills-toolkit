@@ -3,7 +3,10 @@ import nodeExternals from 'webpack-node-externals';
 
 module.exports = {
   devtool: 'source-map',
-  entry: './src/alexa-skills-toolkit.js',
+  entry: {
+    'alexa-skills-toolkit': './src/alexa-skills-toolkit.js',
+    'bin/alexa-skills-toolkit': './src/bin/alexa-skills-toolkit.js',
+  },
   target: 'node',
   output: {
     path: path.join(__dirname, 'dist'),

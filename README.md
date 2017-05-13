@@ -13,16 +13,22 @@ yarn install alexa-skills-toolkit
 Shell
 
 ``` bash
-alexa-skills-toolkit --update-json skill.json
+# Download the current model
+alexa-skills-toolkit --action getcode --appId amzn1.echo-sdk-ams.app.XXX
+
+# Update the model
+alexa-skills-toolkit --action updatecode --appId amzn1.echo-sdk-ams.app.XXX --data file.json
 ```
 
 API
 
 ``` javascript
 
-import ast from 'alexa-skills-toolkit';
+import * as ast from 'alexa-skills-toolkit';
 
-// TBA
+const data = ast.getCode(appId);
+
+ast.updateCOde(appId, data);
 ```
 
 ## Development

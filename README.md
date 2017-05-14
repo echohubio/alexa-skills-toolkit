@@ -2,6 +2,12 @@
 
 Some handy tools to manage Amazon Alexa skills
 
+Currently allows you to fetch and update the skills code. i.e. Intents,
+Utterances and slots.
+
+It utilises your Chrome cookies to authenticate, so you need to log into
+https://developer.amazon.com first.
+
 ## Installation
 
 ``` bash

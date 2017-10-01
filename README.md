@@ -1,3 +1,11 @@
+# DEPRECATION WARNING
+
+Amazon have now released an API for skills management.
+Please use that instead.
+
+https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/ask-cli-intro
+
+
 # Alexa Skills Toolkit
 
 Some handy tools to manage Amazon Alexa skills
